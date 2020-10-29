@@ -1,0 +1,37 @@
+
+{
+    "service" : {
+	"name" : "skeleton.herp.app",
+	"title" : "Rust Skeleton Service",
+	"description" : "A skeleton service with all necessary functionality to talk with herp but without any logic. Feel free to integrate your ideas!",
+	"version" : "1.0.0",
+	"host" : "127.0.0.1:6100"
+    },
+
+    "service_interface" :
+    {"nodeDefinitions" :	[{
+	    "name": "myService",
+	    "label": "My Service Node",
+	    "inputs" : [
+		{
+		    "fieldType" : "string",
+		    "name" : "inputField1",
+		    "label" : "String input field."
+		}
+	    ],
+	    "outputs" : [
+		{
+                    "fieldType": "string",
+                    "name": "outputField",
+                    "label": "Output strings"
+                }
+	   ] 
+    }]},
+    
+    "herp" : {
+	"host"  : "127.0.0.1:5050",
+	"endpoints" : {
+	    "register" : "/services/register"
+	}
+    }
+}

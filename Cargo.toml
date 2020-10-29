@@ -1,5 +1,5 @@
 [package]
-name = "herp-my-service-rust"
+name = "herp_my_service_rust"
 version = "0.1.0"
 authors = ["root"]
 edition = "2018"
